@@ -86,7 +86,13 @@ http://localhost:8080/swagger-ui.html
 # Методы
 POST /api/v1/subscriptions Создать подписку
 
-GET /api/v1/subscriptions Список с фильтрами и пагинацией
+GET /api/v1/subscriptions поддерживает фильтрацию:
+- `userId` по пользователю
+- `serviceName` по сервису
+- `status` по статусу
+- `startDateFrom` дата начала от
+- `endDateTo` дата окончания до
+- `page`, `size`, `sort` пагинация и сортировка
 
 GET /api/v1/subscriptions/{id} Получить по id
 
